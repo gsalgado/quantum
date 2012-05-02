@@ -27,6 +27,15 @@ Running tests
     After running all of the tests, run_test.sh will report any pep8 errors
     found in the tree.
 
+Running individual tests
+
+    Individual tests can be ran using run_tests.sh as well, you just need to
+    pass the dot-separated path to the test you want as the last argument to
+    run_tests.sh. For example, the following would run only the tests defined
+    in quantum/tests/unit/test_api.py:
+
+      $ ./run_tests.sh quantum.tests.unit.test_api
+
 Adding more tests
 
     Quantum is a pretty new code base at this point and there is plenty of
